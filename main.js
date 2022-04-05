@@ -1,7 +1,9 @@
 import './style.css'
+const customersUrl = 'https://raw.githubusercontent.com/graphql-compose/graphql-compose-examples/master/examples/northwind/data/json/customers.json';
+const ordersUrl = 'https://raw.githubusercontent.com/graphql-compose/graphql-compose-examples/master/examples/northwind/data/json/orders.json';
 
-const customersUrl = 'http://localhost:5011/customers';
-const ordersUrl = 'http://localhost:5011/orders';
+// const customersLocalUrl = 'http://localhost:5011/customers';
+// const ordersLocalUrl = 'http://localhost:5011/orders';
 
 const getCustomers = async () => {
   const response = await fetch(customersUrl);
@@ -20,13 +22,13 @@ document.querySelector('#app').innerHTML = `
   <div>There are ${customers.length} customers and ${orders.length} orders.</div>
 `;
 
-const addMessage = async (message) => {
+const addItem = async (item, collection) => {
   const requestOptions = {
     method: 'POST',
-    body: JSON.stringify(message),
+    body: JSON.stringify(item),
     headers: { "Content-type": "application/json; charset=UTF-8" }
   };
-  const response = await fetch('http://localhost:5011/messages', requestOptions);
+  const response = await fetch(`http://localhost:5011/${collection}`, requestOptions);
   return await response.json();
 };
 
@@ -42,5 +44,11 @@ const deleteMessage = async (id) => {
 // text: "this is a message from the front end333",
 //     author: "Klaus444"
 // });
+customers.forEach(customer => {
+  addItem(customer, 'customers');
+});
+orders.forEach(order => {
+  addItem(order, 'orders');
+});
 
 // deleteMessage(5);
