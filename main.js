@@ -39,8 +39,8 @@ const deleteMessage = async (id) => {
 };
 
 //  addMessage({
-// text: "this is a message from the front end",
+// text: "this is a message from the front end333",
 //     author: "Klaus"
 // });
 
-// deleteMessage(2);
+// deleteMessage(5);

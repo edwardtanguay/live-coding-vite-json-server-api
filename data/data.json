@@ -9,6 +9,11 @@
       "text": "this is a message from the front end",
       "author": "Klaus",
       "id": 3
+    },
+    {
+      "text": "this is a message from the front end",
+      "author": "Klaus",
+      "id": 4
     }
   ],
   "customers": [
