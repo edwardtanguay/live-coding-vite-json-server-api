@@ -1,3 +1,4 @@
+import fetch from 'node-fetch';
 import fs from 'fs';
 
 const customersUrl = 'https://raw.githubusercontent.com/graphql-compose/graphql-compose-examples/master/examples/northwind/data/json/customers.json';
@@ -8,8 +9,13 @@ const getData = async (url) => {
   return await response.json();
 };
 
-
 const customers = await getData(customersUrl);
 const orders = await getData(ordersUrl);
 
-console.log(customers.length, orders.length);
+const data = { customers, orders };
+fs.writeFile('./data/data.json', JSON.stringify(data), (err) => {
+  res.status(200).json({
+    success: true,
+    message
+  });
+});

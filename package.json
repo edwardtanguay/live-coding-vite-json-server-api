@@ -2,6 +2,7 @@
   "name": "live-coding-vite-json-server-api",
   "private": true,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -9,5 +10,8 @@
   },
   "devDependencies": {
     "vite": "^2.9.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.3"
   }
 }
