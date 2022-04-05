@@ -1,7 +1,7 @@
 import './style.css'
 
-const customersUrl = 'https://raw.githubusercontent.com/graphql-compose/graphql-compose-examples/master/examples/northwind/data/json/customers.json';
-const ordersUrl = 'https://raw.githubusercontent.com/graphql-compose/graphql-compose-examples/master/examples/northwind/data/json/orders.json';
+const customersUrl = 'http://localhost:5011/customers';
+const ordersUrl = 'http://localhost:5011/orders';
 
 const getCustomers = async () => {
   const response = await fetch(customersUrl);

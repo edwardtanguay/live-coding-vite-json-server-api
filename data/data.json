@@ -30761,50 +30761,6 @@
 					"discount": 0.1
 				}
 			]
-		},
-		{
-			"orderID": 11072,
-			"customerID": "ERNSH",
-			"employeeID": 4,
-			"orderDate": "1998-05-05 00:00:00.000",
-			"requiredDate": "1998-06-02 00:00:00.000",
-			"shippedDate": "NULL",
-			"shipVia": 2,
-			"freight": 258.64,
-			"shipName": "Ernst Handel",
-			"shipAddress": {
-				"street": "Kirchgasse 6",
-				"city": "Graz",
-				"region": "NULL",
-				"postalCode": 8010,
-				"country": "Austria"
-			},
-			"details": [
-				{
-					"productID": 2,
-					"unitPrice": 19,
-					"quantity": 8,
-					"discount": 0
-				},
-				{
-					"productID": 41,
-					"unitPrice": 9.65,
-					"quantity": 40,
-					"discount": 0
-				},
-				{
-					"productID": 50,
-					"unitPrice": 16.25,
-					"quantity": 22,
-					"discount": 0
-				},
-				{
-					"productID": 64,
-					"unitPrice": 33.25,
-					"quantity": 130,
-					"discount": 0
-				}
-			]
 		}
 	]
 }
