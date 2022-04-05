@@ -24,13 +24,23 @@ const addMessage = async (message) => {
   const requestOptions = {
     method: 'POST',
     body: JSON.stringify(message),
-    headers: {"Content-type": "application/json; charset=UTF-8"}
+    headers: { "Content-type": "application/json; charset=UTF-8" }
   };
   const response = await fetch('http://localhost:5011/messages', requestOptions);
   return await response.json();
-}
+};
 
- addMessage({
-text: "this is a message from the front end",
-    author: "Klaus"
-});
+const deleteMessage = async (id) => {
+  const requestOptions = {
+    method: 'DELETE'
+  };
+  const response = await fetch(`http://localhost:5011/messages/${id}`, requestOptions);
+  return await response.json();
+};
+
+//  addMessage({
+// text: "this is a message from the front end",
+//     author: "Klaus"
+// });
+
+// deleteMessage(2);

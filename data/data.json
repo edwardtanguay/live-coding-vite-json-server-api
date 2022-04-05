@@ -6,11 +6,6 @@
       "author": "James"
     },
     {
-      "id": 2,
-      "text": "hello",
-      "author": "Ashley"
-    },
-    {
       "text": "this is a message from the front end",
       "author": "Klaus",
       "id": 3
