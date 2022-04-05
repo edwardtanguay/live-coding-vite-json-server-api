@@ -1,0 +1,1 @@
+- .. use fetch to get customers and orders data and show on page
