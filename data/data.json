@@ -1,4 +1,16 @@
 {
+	"messages": [
+		{
+			"id": 1,
+			"text": "hello",
+			"author": "James"
+		},
+		{
+			"id": 2,
+			"text": "hello",
+			"author": "Ashley"
+		}
+	],
 	"customers": [
 		{
 			"customerID": "AROUT",
